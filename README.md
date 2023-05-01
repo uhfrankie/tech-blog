@@ -12,7 +12,7 @@ SO THAT I can publish articles, blog posts, and my thoughts and opinions
 
 The following animation demonstrates the application functionality:
 
-(./Assets/14-mvc-homework-demo-01.gif) 
+./Assets/14-mvc-homework-demo-01.gif 
 
 
 ## Questions
