@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tech Blog</title>
+    
+</head>
+<body>
+    <header> 
+        <button class="navbar">
+            <a href="/" class="nav-link"> Home </a>
+            <a href="/dashboard" class="nav-link"> Dashboard </a>
+            {{#unless logged in}}
+            <a href="/login" class="nav-link"> Log In </a>
+            {{/unless}}
+            {{#if logged in}}
+            <button type="submit" id="logout"><a href="/" class="nav-link"> Logout </a></button> </button>
+            {{/if}}
+        <div class="main-heading">
+            <h1><span class="head-home"><a href="/" class="head-home"> Tech Blog </a></span></h1>
+        </div>
+    </header>
+    <main> {{{body}}} </main>
+
+
+
+    <script src="../../utils/helpers.js"></script>
+</body>
+</html>
