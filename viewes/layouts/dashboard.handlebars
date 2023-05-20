@@ -1,0 +1,39 @@
+<div class="blog-posts-by-user">
+    <div class="new-b">
+        <h2> Welcome {{username}}, here's yout ccurrent posts;</h2>
+    </div>
+    {{#if blogs.length}}
+    <div class="blog-new">
+        {{#each blogs as |blog|}}
+        <div class="user-blogs-hold">
+            <div class="user-clog-content">
+                <h2> {{blog.blog_title}} </h2>
+                <p> {{blog.blog_content}} </p>
+            </div>
+        </div>
+        {{each}}
+    </div>
+    {{/if}}
+    </div>
+
+<div class="blog-new">
+    <div class="title-page new-b">
+        <h3> Create new blog post </h3>
+    </div>
+    <form class="blog-new">
+        <div class="group-form">
+            <label for="proj-name"> Title: </label>
+            <input class="form-input-d" id="title-blog" name="title-blog" type="text"/>
+        </div>
+        <div class="group-form">
+            <label for="proj-descr"> Content: </label>
+            <input class="form-input-d" id="title-content" name="title-content" type="text"/>
+        </div>
+        <div class="group-form">
+            <button class="btn btn-secondary" type="submit"> Create Blog: </button>
+        </div>
+    </form>
+</div>
+
+
+<script src='./js/newBlogPost.js'></script>
